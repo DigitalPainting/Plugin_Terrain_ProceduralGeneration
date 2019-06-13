@@ -18,14 +18,13 @@ using System.Linq;
 /// -Create terrain: start generating the terrain. Depending on the resolution, this might take a while.
 /// 
 /// </summary>
-public class MeshToTerrain : EditorWindow
+public class MeshToTerrainWindow : EditorWindow
 {
 
     [MenuItem("Digital Painting/Terrain/Convert Preview to Terrain", false, 2000)]
     static void OpenWindow()
     {
-
-        EditorWindow.GetWindow<MeshToTerrain>(true);
+        EditorWindow.GetWindow<MeshToTerrainWindow>(false);
     }
 
     private string terrainName = "Generated Terrain";
