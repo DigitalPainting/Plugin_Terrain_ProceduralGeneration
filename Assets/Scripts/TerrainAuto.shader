@@ -1,4 +1,4 @@
-﻿Shader "Custom/Terrain" {
+﻿Shader "Custom/MeshTerrain" {
 	Properties {
 		testTexture("Texture", 2D) = "white"{}
 		testScale("Scale", Float) = 1

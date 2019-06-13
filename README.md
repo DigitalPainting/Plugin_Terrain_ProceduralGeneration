@@ -6,9 +6,7 @@ Open `Scenes/Demo`. You will see a small preview section of terrain, this is int
 
 Select the `Map Generator` in the hierarchy and double click on  the `Height Map Settings` property. This will open a Scriptable Object containing the terrain parameters. Here you can click on the `Update` button to generate the terrain and apply textures, but changing any of the values will also result in the auotgeneration of the terrain. Parameters have tooltip help text, for a full discussion of what all the parameters do see the [video series](https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3) from the originating author Sebastian Lague.
 
-To inspect your complete terrain in-game click play. There is a simple first person controller included. WASD to move, right mouse button to look.
-
-This generates a mesh for your terrain, but it's not a terrain tht can be eaily reused.
+This generates a mesh for your terrain, but it's not a Unity terrain yet. To generate a terrain from the mesh select the `Map Preview -> Preview Mesh` then use the menu item `Digital Painting -> Terrain -> Convert preview to Terrain`. Then click `Create Terrain` This will insert a terrain object into your scene. This uses the default terrain shader, you can add textures and paint the terrain. 
 
 ## Original Source
 
