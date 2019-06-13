@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace wizardscode.noise
+namespace wizardscode.terrain
 {
     public static class FalloffGenerator
     {
