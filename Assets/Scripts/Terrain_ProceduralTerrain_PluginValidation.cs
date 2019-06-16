@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using wizardscode.plugin;
 using wizardscode.plugin.terrain;
 using wizardscode.terrain;
@@ -9,28 +10,23 @@ namespace wizardscode.validation
     {
         public override ValidationTest<Terrain_PluginManager> Instance => new Terrain_ProceduralTerrain_PluginValidation();
 
-        internal override string ProfileType => typeof(Terrain_ProceduralTerrain_Profile).ToString();
+        internal override Type ProfileType => typeof(Terrain_ProceduralTerrain_Profile);
         
-        internal override void PostFieldCustomValidations() {
-            ValidationResult result;
+        internal override bool PostFieldCustomValidations() {
+            bool isPass = base.PostFieldCustomValidations();
+            
             if (Terrain.activeTerrain)
             {
-                result = GetPassResult("Terrain is required.", 
-                    "There is a terrain in the scene.", 
-                    this.GetType().Name);
-                ResultCollection.AddOrUpdate(result, this.GetType().Name);
-                return;
+                AddOrUpdateAsPass("Terrain is required.", "There is a terrain in the scene.");
             }
             else
             {
-                result = GetErrorResult("Terrain is required.", 
-                    "There is no terrain in the scene.", 
-                    this.GetType().Name);
-                ProfileCallback callback = new ProfileCallback(GenerateTerrain);
-                result.AddCallback(new ResolutionCallback(callback));
-                ResultCollection.AddOrUpdate(result, this.GetType().Name);
-                return;
+                ResolutionCallback callback = new ResolutionCallback(new ProfileCallback(GenerateTerrain));
+                AddOrUpdateAsError("Terrain is required.", "There is no terrain in the scene.", callback);
+                isPass = false;
             }
+
+            return isPass;
         }
 
         private void GenerateTerrain()
