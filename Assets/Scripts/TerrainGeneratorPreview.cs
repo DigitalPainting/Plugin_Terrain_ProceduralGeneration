@@ -3,13 +3,11 @@ using System.Collections;
 
 namespace wizardscode.terrain
 {
-    public class MapPreview : MonoBehaviour
+    public class TerrainGeneratorPreview : MonoBehaviour
     {
-
         public Renderer textureRender;
         public MeshFilter meshFilter;
         public MeshRenderer meshRenderer;
-
 
         public enum DrawMode { NoiseMap, Mesh, FalloffMap };
         public DrawMode drawMode;
@@ -20,14 +18,9 @@ namespace wizardscode.terrain
 
         public Material terrainMaterial;
 
-
-
         [Range(0, MeshSettings.numSupportedLODs - 1)]
         public int editorPreviewLOD;
         public bool autoUpdate;
-
-
-
 
         public void DrawMapInEditor()
         {
@@ -48,10 +41,6 @@ namespace wizardscode.terrain
                 DrawTexture(TextureGenerator.TextureFromHeightMap(new HeightMap(FalloffGenerator.GenerateFalloffMap(meshSettings.numVertsPerLine), 0, 1)));
             }
         }
-
-
-
-
 
         public void DrawTexture(Texture2D texture)
         {
@@ -87,7 +76,6 @@ namespace wizardscode.terrain
 
         void OnValidate()
         {
-
             if (meshSettings != null)
             {
                 meshSettings.OnValuesUpdated -= OnValuesUpdated;

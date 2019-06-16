@@ -1,0 +1,9 @@
+[submodule "Assets/DigitalPainting"]
+	path = Assets/DigitalPainting
+	url = git@github.com:DigitalPainting/DigitalPainting.git
+[submodule "Assets/Flying-Pathfinding"]
+	path = Assets/Flying-Pathfinding
+	url = git@github.com:DigitalPainting/Flying-Pathfinding.git
+[submodule "Assets/ScriptableObject-Architecture"]
+	path = Assets/ScriptableObject-Architecture
+	url = git@github.com:rgardler/ScriptableObject-Architecture.git

@@ -3,10 +3,10 @@ using System.Collections;
 
 namespace wizardscode.terrain
 {
-    [CreateAssetMenu()]
+    [CreateAssetMenu(fileName = "DESCRIPTIVENAME_HeightMapSettingSO",
+        menuName = "Wizards Code/Terrain/Height Map Setting")]
     public class HeightMapSettings : UpdatableData
     {
-
         public NoiseSettings noiseSettings;
 
         public bool useFalloff;

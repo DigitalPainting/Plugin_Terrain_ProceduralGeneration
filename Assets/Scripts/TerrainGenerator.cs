@@ -9,13 +9,12 @@ namespace wizardscode.terrain
 
         const float viewerMoveThresholdForChunkUpdate = 25f;
         const float sqrViewerMoveThresholdForChunkUpdate = viewerMoveThresholdForChunkUpdate * viewerMoveThresholdForChunkUpdate;
-
-
+        
         public int colliderLODIndex;
         public LODInfo[] detailLevels;
 
         public MeshSettings meshSettings;
-        public HeightMapSettings heightMapSettings;
+        public static HeightMapSettings heightMapSettings;
         public TextureData textureSettings;
 
         public Transform viewer;
@@ -32,7 +31,6 @@ namespace wizardscode.terrain
 
         void Start()
         {
-
             textureSettings.ApplyToMaterial(mapMaterial);
             textureSettings.UpdateMeshHeights(mapMaterial, heightMapSettings.minHeight, heightMapSettings.maxHeight);
 
