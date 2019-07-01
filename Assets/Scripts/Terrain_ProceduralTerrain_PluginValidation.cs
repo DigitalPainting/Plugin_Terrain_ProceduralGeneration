@@ -12,17 +12,17 @@ namespace wizardscode.validation
 
         internal override Type ProfileType => typeof(Terrain_ProceduralTerrain_Profile);
         
-        internal override bool PostFieldCustomValidations() {
-            bool isPass = base.PostFieldCustomValidations();
+        internal override bool PostFieldCustomValidations(AbstractPluginManager pluginManager) {
+            bool isPass = base.PostFieldCustomValidations(pluginManager);
             
             if (Terrain.activeTerrain)
             {
-                AddOrUpdateAsPass("Terrain is required.", "There is a terrain in the scene.");
+                AddOrUpdateAsPass("Terrain is required.", pluginManager, "There is a terrain in the scene.");
             }
             else
             {
                 ResolutionCallback callback = new ResolutionCallback(new ProfileCallback(GenerateTerrain));
-                AddOrUpdateAsError("Terrain is required.", "There is no terrain in the scene.", callback);
+                AddOrUpdateAsError("Terrain is required.", pluginManager, "There is no terrain in the scene.", callback);
                 isPass = false;
             }
 
