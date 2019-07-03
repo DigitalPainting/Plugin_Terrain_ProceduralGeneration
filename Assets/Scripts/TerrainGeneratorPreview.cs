@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace wizardscode.terrain
+namespace WizardsCode.terrain
 {
     public class TerrainGeneratorPreview : MonoBehaviour
     {

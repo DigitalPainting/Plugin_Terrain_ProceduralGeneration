@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
-using wizardscode.plugin;
-using wizardscode.plugin.terrain;
-using wizardscode.terrain;
+using WizardsCode.plugin;
+using WizardsCode.plugin.terrain;
+using WizardsCode.terrain;
 
-namespace wizardscode.validation
+namespace WizardsCode.validation
 {
     public class Terrain_ProceduralTerrain_PluginValidation : ValidationTest<Terrain_PluginManager>
     {

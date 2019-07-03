@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace wizardscode.terrain
+namespace WizardsCode.terrain
 {
     [CreateAssetMenu()]
     public class MeshSettings : UpdatableData

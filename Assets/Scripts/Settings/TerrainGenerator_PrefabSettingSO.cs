@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using wizardscode.validation;
+using WizardsCode.validation;
 
-namespace wizardscode.terrain.validation
+namespace WizardsCode.terrain.validation
 {
     [CreateAssetMenu(fileName = "DESCRIPTIVENAME_ProceduralTerrain_PrefabSO",
         menuName = "Wizards Code/Validation/Terrain/Procedural Generation Prefab")]

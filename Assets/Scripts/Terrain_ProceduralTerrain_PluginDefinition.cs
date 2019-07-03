@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace wizardscode.plugin.terrain
+namespace WizardsCode.plugin.terrain
 {
     public class Terrain_ProceduralTerrain_PluginDefinition
         : AbstractPluginDefinition

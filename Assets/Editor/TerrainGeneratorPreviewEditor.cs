@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-namespace wizardscode.terrain
+namespace WizardsCode.terrain
 {
     [CustomEditor(typeof(TerrainGeneratorPreview))]
     public class TerrainGeneratorPreviewEditor : Editor

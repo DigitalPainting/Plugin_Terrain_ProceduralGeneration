@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace wizardscode.terrain
+namespace WizardsCode.terrain
 {
     public class MeshToTerrain
     {

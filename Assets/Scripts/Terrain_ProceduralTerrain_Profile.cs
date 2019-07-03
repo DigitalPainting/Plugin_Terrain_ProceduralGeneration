@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using wizardscode.editor;
-using wizardscode.terrain.validation;
-using wizardscode.validation;
+using WizardsCode.editor;
+using WizardsCode.terrain.validation;
+using WizardsCode.validation;
 
-namespace wizardscode.plugin.terrain
+namespace WizardsCode.plugin.terrain
 {
     [CreateAssetMenu(fileName = "Terrain_ProceduralTerrain_Profile", 
         menuName = "Wizards Code/Terrain/Procedural Generation Profile")]

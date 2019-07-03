@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace wizardscode.terrain
+namespace WizardsCode.terrain
 {
     public static class FalloffGenerator
     {
