@@ -5,7 +5,7 @@ using UnityEditor;
 namespace WizardsCode.Terrain
 {
     [CustomEditor(typeof(UpdatableData), true)]
-    public class UpdatableDataEditor : Editor
+    public class UpdatableDataEditor : UnityEditor.Editor
     {
 
         public override void OnInspectorGUI()

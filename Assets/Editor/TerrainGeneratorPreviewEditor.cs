@@ -5,7 +5,7 @@ using UnityEditor;
 namespace WizardsCode.Terrain
 {
     [CustomEditor(typeof(TerrainGeneratorPreview))]
-    public class TerrainGeneratorPreviewEditor : Editor
+    public class TerrainGeneratorPreviewEditor : UnityEditor.Editor
     {
         private string terrainName = "Generated Terrain";
         private int spacing = 10;

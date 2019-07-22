@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using WizardsCode.editor;
+using WizardsCode.Editor;
 using WizardsCode.Terrain.Validation;
 
 namespace WizardsCode.Plugin.Terrain
