@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     public class UpdatableData : ScriptableObject
     {

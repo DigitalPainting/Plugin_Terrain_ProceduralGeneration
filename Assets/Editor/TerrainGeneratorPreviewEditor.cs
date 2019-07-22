@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     [CustomEditor(typeof(TerrainGeneratorPreview))]
     public class TerrainGeneratorPreviewEditor : Editor
@@ -46,11 +46,11 @@ namespace WizardsCode.terrain
             bottomTopRadioSelected = GUILayout.SelectionGrid(bottomTopRadioSelected, bottomTopRadio, bottomTopRadio.Length, EditorStyles.radioButton);
 
 
-            if (Terrain.activeTerrain)
+            if (UnityEngine.Terrain.activeTerrain)
             {
                 if (GUILayout.Button("Delete Terrain"))
                 {
-                    DestroyImmediate(Terrain.activeTerrain.gameObject);
+                    DestroyImmediate(UnityEngine.Terrain.activeTerrain.gameObject);
                 }
             }
             else
@@ -66,8 +66,8 @@ namespace WizardsCode.terrain
         void CreateTerrain()
         {
             TerrainData data = MeshToTerrain.CreateTerrainData(terrainName, resolution, addTerrain, shiftHeight, bottomTopRadioSelected == 0);
-            
-            GameObject terrainObject = Terrain.CreateTerrainGameObject(data);
+
+            GameObject terrainObject = UnityEngine.Terrain.CreateTerrainGameObject(data);
             terrainObject.name = terrainName;
         }
 

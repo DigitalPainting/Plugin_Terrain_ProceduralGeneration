@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     public class TerrainGenerator : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     [CreateAssetMenu(fileName = "DESCRIPTIVENAME_HeightMapSettingSO",
         menuName = "Wizards Code/Terrain/Height Map Setting")]

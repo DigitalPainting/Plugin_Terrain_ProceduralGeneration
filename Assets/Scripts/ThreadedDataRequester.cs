@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Threading;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     public class ThreadedDataRequester : MonoBehaviour
     {

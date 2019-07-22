@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WizardsCode.plugin.terrain
+namespace WizardsCode.Plugin.Terrain
 {
     public class Terrain_ProceduralTerrain_PluginDefinition
         : AbstractPluginDefinition
@@ -17,7 +17,7 @@ namespace WizardsCode.plugin.terrain
 
         public override string GetPluginImplementationClassName()
         {
-            return "wizardscode.terrain.TerrainGenerator";
+            return "WizardsCode.Terrain.TerrainGenerator";
         }
 
         public override string GetProfileTypeName()

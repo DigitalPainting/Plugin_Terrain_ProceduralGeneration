@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     public static class HeightMapGenerator
     {

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     [CustomEditor(typeof(UpdatableData), true)]
     public class UpdatableDataEditor : Editor

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Linq;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     [CreateAssetMenu()]
     public class TextureData : UpdatableData

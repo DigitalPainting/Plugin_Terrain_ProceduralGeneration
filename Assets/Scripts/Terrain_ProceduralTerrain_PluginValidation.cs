@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
-using WizardsCode.plugin;
-using WizardsCode.plugin.terrain;
-using WizardsCode.terrain;
+using WizardsCode.Plugin;
+using WizardsCode.Plugin.Terrain;
+using WizardsCode.Terrain;
 
-namespace WizardsCode.validation
+namespace WizardsCode.Validation
 {
     public class Terrain_ProceduralTerrain_PluginValidation : ValidationTest<Terrain_PluginManager>
     {
@@ -15,7 +15,7 @@ namespace WizardsCode.validation
         internal override bool PostFieldCustomValidations(AbstractPluginManager pluginManager) {
             bool isPass = base.PostFieldCustomValidations(pluginManager);
             
-            if (Terrain.activeTerrain)
+            if (UnityEngine.Terrain.activeTerrain)
             {
                 AddOrUpdateAsPass("Terrain is required.", pluginManager, "There is a terrain in the scene.");
             }
@@ -47,7 +47,7 @@ namespace WizardsCode.validation
             terrainPreview.DrawMapInEditor();
 
             TerrainData data = MeshToTerrain.CreateTerrainData(terrainName, 512, Vector3.zero, 0);
-            GameObject terrainObject = Terrain.CreateTerrainGameObject(data);
+            GameObject terrainObject = UnityEngine.Terrain.CreateTerrainGameObject(data);
             terrainObject.name = terrainName;
 
             if (destroyPreview)

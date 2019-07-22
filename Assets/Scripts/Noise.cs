@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace WizardsCode.terrain
+namespace WizardsCode.Terrain
 {
     public static class Noise
     {
