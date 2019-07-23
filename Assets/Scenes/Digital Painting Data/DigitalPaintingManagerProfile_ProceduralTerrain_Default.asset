@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DigitalPaintingManagerProfile_ProceduralTerrain_Default
   m_EditorClassIdentifier: 
   CameraSettings: {fileID: 11400000, guid: 3ae4c0583a4c3d14bbfd2d5f4e13feae, type: 2}
-  TerrainSettings: {fileID: 11400000, guid: ac9bd176701996549b36fb568b146fe2, type: 2}
+  TerrainSettings: {fileID: 11400000, guid: 334c9c60da6fc9343beb7f41847cacc3, type: 2}
   ColorSpaceSettings: {fileID: 11400000, guid: c964f995f8df3d3499164b4885b3b702, type: 2}
   ScreenSpaceSettings: {fileID: 11400000, guid: 01dd72b7431a789439d58a03c43b70d3,
     type: 2}

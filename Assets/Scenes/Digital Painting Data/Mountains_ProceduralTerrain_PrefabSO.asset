@@ -16,7 +16,7 @@ MonoBehaviour:
   Nullable: 0
   m_suggestedValue: {fileID: 2784232627185523667, guid: 79d369aca3aa3b640be63f7f21277543,
     type: 3}
-  AddToScene: 0
+  AddToScene: 1
   spawnPosition: {x: -1500, y: 0, z: -1500}
   randomTerrain: 1
-  heightMapSeed: -551892125
+  heightMapSeed: -1907983608
