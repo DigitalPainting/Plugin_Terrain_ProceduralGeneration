@@ -6,7 +6,7 @@ using WizardsCode.Validation;
 namespace WizardsCode.Terrain.Validation
 {
     [CreateAssetMenu(fileName = "DESCRIPTIVENAME_ProceduralTerrain_PrefabSO",
-        menuName = "Wizards Code/Validation/Terrain/Procedural Generation Prefab")]
+        menuName = "Wizards Code/Terrain/Procedural Generation Prefab")]
     public class TerrainGenerator_PrefabSettingSO : PrefabSettingSO
     {
         [Header("Height Map Settings")]

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36d595ac754fd64db1839dc837df706, type: 3}
   m_Name: Terrain_ProceduralTerrain_Default_Profile
   m_EditorClassIdentifier: 
-  terrainGenerator: {fileID: 11400000, guid: c89c23c34f1827247a8fb4399b3bd675, type: 2}
+  terrainGenerator: {fileID: 11400000, guid: 334c9c60da6fc9343beb7f41847cacc3, type: 2}

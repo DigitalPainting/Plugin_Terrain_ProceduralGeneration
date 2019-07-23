@@ -2,11 +2,13 @@ Generate procedural terrains in Unity.  This is not intended to be a replacement
 
 ## Getting Started
 
-Open `Scenes/Demo`. You will see a small preview section of terrain, this is intended to give you a feel for what your complete terrain will look like when you enter play mode. 
+Setup a Digital Painting scene as per normal process.
 
-Select the `Map Generator` in the hierarchy and double click on  the `Height Map Settings` property. This will open a Scriptable Object containing the terrain parameters. Here you can click on the `Update` button to generate the terrain and apply textures, but changing any of the values will also result in the auotgeneration of the terrain. Parameters have tooltip help text, for a full discussion of what all the parameters do see the [video series](https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3) from the originating author Sebastian Lague.
+Add the Terrain Plugin to your scene.
 
-This generates a mesh for your terrain, but it's not a Unity terrain yet. To generate a terrain from the mesh select the `Map Preview -> Preview Mesh` then use the menu item `Digital Painting -> Terrain -> Convert preview to Terrain`. Then click `Create Terrain` This will insert a terrain object into your scene. This uses the default terrain shader, you can add textures and paint the terrain. 
+Ensure that the terrain plugin is configured correctly. There are a couple of sample setups (Hills_ProceduralTerrain_PrefabSO and Mountains_ProceduralTerrain_PrefabSO) to get you started.
+
+You should have a warning at this point that the terrain does not exist in the scene. Click the "Instantiate Prefab" button and a terrain will be generated for you
 
 ## Original Source
 
